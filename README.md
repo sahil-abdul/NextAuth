@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 Simple Email Authentication App (Next.js)
 
-## Getting Started
+A minimal authentication app built with **Next.js** that uses secure **email verification links** (magic links) for passwordless login. Ideal for MVPs, prototypes, and internal tools.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Passwordless login with magic links
+- 📧 Email-based user authentication
+- 🔗 One-time, time-limited login links
+- ⚙️ Built with Next.js API routes and React
+- 🧼 Simple, clean UI
+- 🔒 Secure token handling (e.g. JWT)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. User enters their email on the login page.
+2. A secure one-time login link is sent to their email.
+3. The user clicks the link and is authenticated.
+4. The app sets a session or token for future access.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧱 Tech Stack
 
-## Learn More
+- **Next.js** (API Routes + Pages)
+- **NodeMailer** or any email service (e.g. Resend, SendGrid)
+- **JWT** or secure tokens for authentication
+- Optional: **NextAuth.js** for extended auth handling
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
